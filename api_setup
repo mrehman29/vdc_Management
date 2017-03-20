@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "=========Setting API Keys==========="
+read -p "Enter VDC API Key: " iAPI
+read -p "Enter VDC Secret Key: " iSecret
+read -p "Enter Object Storage API Key: " oAPI
+read -p "Enter Object Storage Secret Key: " oSecret
+
+printf "iAPI=$iAPI\nSecret=$iSecret\noAPI=$oAPI\noSecret=$oSecret" > ~/.API_MGMT
+echo "=========API Keys Saved============="
+
